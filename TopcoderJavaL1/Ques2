@@ -1,0 +1,44 @@
+class Animal {
+	Animal() {
+		System.out.println("Animal shouts");	
+	}
+	void shout() {
+		System.out.println("shout....shout....shout");
+	}
+}
+class Cat extends Animal {
+	Cat() {
+		System.out.println("Cat shouts");
+	}
+	void shout() {
+		System.out.println("meow....meow....meow");
+	}
+}
+class Dog extends Animal {
+	Dog() {
+		System.out.println("Dog shouts");
+	}
+	void shout() {
+		System.out.println("woof....woof....woof");
+	}
+}
+class Horse extends Animal {
+	Horse() {
+		System.out.println("Horse shouts");
+	}
+	void shout() {
+		System.out.println("neigh....neigh....neigh");
+	}
+}
+public class AnimalMain {
+	public static void main(String[] args) {
+		Animal a = new Animal();
+		a.shout();
+		Cat c = new Cat();
+		c.shout();
+		Dog d = new Dog();
+		d.shout();
+		Horse h = new Horse();
+		h.shout();
+	}
+}
